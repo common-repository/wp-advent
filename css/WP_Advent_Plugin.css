@@ -1,0 +1,63 @@
+/**
+ * WP-Advent: Frontend-CSS
+ */
+
+#wp-advent-wrapper {
+    position: relative;
+    box-sizing: border-box;
+}
+
+#wp-advent-wrapper::before {
+    padding-bottom: 100%;
+    display: block;
+    content: '';
+}
+
+#wp-advent-calendar {
+    background-position: center center;
+    background-size: cover;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    max-width: 100%;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    padding: 0;
+}
+
+#wp-advent-calendar li {
+    display: block;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    min-width: 16.66%;
+    height: 25%;
+    flex-grow: 1;
+}
+
+#wp-advent-calendar li a,
+#wp-advent-calendar li span {
+    border: 0;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.3em;
+    text-decoration: none;
+    transition: background 0.3s linear, text-shadow 0.3s linear;
+    height: 100%;
+    box-shadow: none;
+}
+
+#wp-advent-calendar li span { background: rgba(255, 255, 255, 0.9); }
+
+#wp-advent-calendar li a { text-shadow: 0 0 5px #000; }
+
+#wp-advent-calendar li a:hover { background: rgba(255, 255, 255, 0.5); }
+
+#wp-advent-calendar li a:active { top: 0; }

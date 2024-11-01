@@ -1,0 +1,50 @@
+/**
+ * WP-Advent: Admin-CSS
+ */
+
+.jsonly { display: none; }
+
+.calendar-add-floater {
+    display: inline-block;
+    float: left;
+    margin-right: 10px;
+}
+
+.calendar-add-floater p {
+    margin: 0;
+    padding: 0;
+}
+
+.all-calendars-headline { margin: 50px 0 0 0;}
+
+.wp-advent-imagepreview { max-width: 500px; }
+
+.wp-advent-admin-calendar { width: 100%; }
+
+.sheet a,
+.empty a,
+.sheet span,
+.empty span {
+    color: black;
+    display: block;
+    padding: 10px 5px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.sheet a:hover,
+.empty a:hover {
+    background: #cccccc;
+}
+
+.sheet a { background-color: #adff2e; }
+
+.empty a { background-color: rgba(255, 69, 1, 0.52); }
+
+.wp-advent-delete-form p { margin: 0; }
+
+/* Overriding Styles for WP 4.3 */
+.wp-advent-admin-wrapper .postbox h2 {
+    font-size: 14px;
+    margin-left: 12px;
+}
